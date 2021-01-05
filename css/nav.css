@@ -78,6 +78,9 @@ html {
   }
 }
 @media (max-width: 700px) {
+  .top-bar__brand {
+    align-self: center;
+  }
   .top-bar__nav-toggle {
     margin-left: 20px;
   }

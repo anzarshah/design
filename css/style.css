@@ -67,6 +67,11 @@
   transform: rotateY(180deg);
 }
 
+@media (max-width: 700px) {
+  .logo {
+    margin-right: 55px;
+  }
+}
 .logo {
   border-radius: 50%;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;

@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="./css/nav.css"/>
         <link rel="stylesheet" href="./css/footer.css"/>
         <link rel="stylesheet" href="./css/style.css"/>
+
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
         
@@ -27,8 +28,8 @@
                   <span></span>
                   <span></span>
                 </button>
-                <a href="#" class="top-bar__brand"> <img class="logo" src="./img/logoalone.png" height="80px" width="80px">
-                 </a>  <a href="#" class="top-bar__brand"></a> <img class="make-it-fast" src="./img/logotext.png" height="80px" width="210px"> </a>
+                <a href="./index.html" class="top-bar__brand"> <img class="logo" src="./img/logoalone.png" height="80px" width="80px">
+                 </a>  
                 <div class="top-bar__contact">
                   <a href="tel:+918800759996">
                     <i class="fa fa-phone" aria-hidden="true"></i> 880-075-9996
@@ -44,13 +45,128 @@
                 <nav class="top-bar__nav collapsed" id="top-bar__nav">
                   <ul class="top-bar__nav-list ">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html#about-section">About</a></li>
-
-                    <li><a href="#">Apply Now</a></li>
-                    <li><a href="./index.html#about-section">About us </a></li>
+                    <li> <a class="popup1_open" class="join-button" href="#" >Apply Now</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                   </ul>
                 </nav>
+
+
+                <script src="./js/nav.js"></script>
+
+
+                <section id="popup1"> 
+                    <div class="site-section bg-light" id="contact-section">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
+                            <div class="block-heading-1">
+                                <h2>Apply here</h2>
+                                <span>Fill your details</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-12 mb-5" data-aos="fade-up" data-aos-delay="">
+                            <form action="mailer.php" method="post">
+                              <div class="form-group row">
+                                <div class="col-md-6 mb-4 mb-lg-0">
+                                  <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                                </div>
+                                </div>
+                
+                            <div class="form-group row">
+                                <div class="col-md-6 mb-4 mb-lg-0">
+                                  <input type="text" class="form-control" name="email" placeholder="Email ID" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" class="form-control" name="phone" placeholder="Phone No" required>
+                                </div>
+                                </div>
+                
+                                 <div class="form-group row">
+                                <div class="col-md-6 mb-4 mb-lg-0">                
+                                   <select class="form-control" id="drop" name="district">
+                                    <option value="Srinagar" name="Srinagar">Srinagar</option>
+                                    <option value="Baramulla"  name="Baramulla">Baramulla</option>
+                                    <option value="Anantnag"  name="Anantnag">Anantnag</option>
+                                    <option value="Budgam"  name="Budgam">Budgam</option>
+                                    <option value="Ganderbal"  name="Ganderbal">Ganderbal</option>
+                                    <option value="Pulwama"  name="Pulwama">Pulwama</option>
+                                    <option value="Others" name="Others">Others</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" class="form-control" name="address" placeholder="Address" required>
+                                </div>
+                                </div>
+                          
+                
+                           <div class="form-group row">
+                                <div class="col-md-6 mb-4 mb-lg-0">
+                                  <h5>Purpose of use</h5>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="radio" id="home" name="use" value="Home" required>
+                                  <label for="Home"> Home </label>
+                                  <input type="radio" id="commercial" name="use" value="Commercial" required  style="margin-left:10px;">
+                                  <label for="Commercial">Commercial</label><br>
+                                </div>
+                            </div>
+                
+                
+                            <!-- <div class="form-group row">
+                                <div class="col-md-6 mb-4 mb-lg-0">
+                                  <h5>Connection Type</h5>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="radio" id="wired" name="connection" value="wired" required>
+                                  <label for="wired"> Wired</label>
+                                  <input type="radio" id="wireless" name="connection" value="wireless"  required style="margin-left:10px;">
+                                  <label for="wireless">Wireless</label><br>
+                                </div>
+                            </div> -->
+                
+                
+                           
+                            
+                                
+                              <div class="row">
+                                <div class="col-md-6 mr-auto">
+                                  <input type="submit" class="btn btn-block btn-dark text-white py-3 px-5" value="Send Message">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                </section>
+                
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+                
+                <script>
+                  
+                  $('#popup1').popup();
+                
+                
+                $('#popup2').popup({
+                  pagecontainer: '#page',
+                  escape: false
+                });
+                </script>
+                                  
+                                  </a></li>     
+            
+
+
+
+
               </div>
             
         </header>
@@ -63,6 +179,8 @@
 
 
         <!-- Contact start here -->
+        <br>
+        <br>
         <div>
 
             <div class="container">
@@ -76,6 +194,7 @@
               <div class="block-heading-1">
                  <!--h6>All plans come with free unlimited landline connection Over fiber and IPTV connection</h6>
                  <h6>High speed Internet + BSNL Landline connection + IPTV</h6-->
+                    <br>
                  <h5>* GST Applicable</h5>
                 <span><h2>Get In Touch</h2></span>
                 
@@ -135,7 +254,7 @@
               </div>
   
   
-              <div class="form-group row">
+              <!-- <div class="form-group row">
                   <div class="col-md-6 mb-4 mb-lg-0">
                     <h5>Connection Type</h5>
                   </div>
@@ -145,7 +264,7 @@
                     <input type="radio" id="wireless" name="connection" value="wireless"  required style="margin-left:10px;">
                     <label for="wireless">Wireless</label><br>
                   </div>
-              </div>
+              </div> -->
   
   
              
@@ -188,6 +307,10 @@
               
     
           </div>
+
+          <br>
+          <br>
+          <br>
       <!-- about end here -->
         <footer class="footer-section">
             <div class="container">
@@ -248,35 +371,29 @@
                                     <h3>Useful Links</h3>
                                 </div>
                                 <ul> <hr>
-                                    <li><a href="#">Apply Now</a></li>
+                                    <li><a class="popup1_open" href="#">Apply Now</a></li>
 
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="./index.html">Home</a></li>
                           
                                     
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="./index.html#about-section">About us</a></li>
+                                    <li><a href="./pricing.html">pricing</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                             <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>APPLY NOW</h3>
-                                </div>
+                              
                                 <div class="footer-text mb-25">
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="352" height="342" id="gmap_canvas" src="https://maps.google.com/maps?q=karan%20nagar%20srinagar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com">uncut gems 123movies</a><style>.mapouter{position:relative;text-align:right;height:342px;width:352px;}.gmap_canvas {overflow:hidden;background:none!important;height:342px;width:352px;}</style><a href="https://maps-google.github.io/embed-google-map/">embed google map</a></div></div>
                                 </div>
-                                <div class="subscribe-form">
-                                    <form action="#">
-                                        <button><i class="fab fa-telegram-plane"></i></button>
-                                    </form>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-          
+        
         </footer>  
 
     </body>

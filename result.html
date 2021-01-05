@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>BSNL FIBER JK</title>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+Success 
+
+click here to go to main page <a href="index.html">home page</a>
+
+<script>
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+$(function(){
+console.log('inside document load ');
+
+
+var result =getParameterByName('result');
+
+
+console.log('result '+result);
+if(result==='success'){
+    alert('Email sent succesfully!');
+    window.location="index.html";
+
+}
+else{
+    
+    alert('Email was not send , kindly check your inputs and try again.');
+    window.location="index.html";
+}
+
+
+});
+
+<script>
+</body>
+</html>

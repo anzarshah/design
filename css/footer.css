@@ -97,6 +97,16 @@ ul {
   margin-bottom: 40px;
   position: relative;
 }
+
+.h33{
+
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+  
+}
 /* .footer-widget-heading h3::before {
   content: "";
   position: absolute;

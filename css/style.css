@@ -115,9 +115,33 @@ img:hover {
 }
 
 .pricing {
-  background: #fff;
+  background: rgb(213, 215, 223);
   padding: 30px;
-  border: 1px solid rgb(175, 175, 175);
+  border: 1px solid rgb(0, 43, 128);
+  font-family: "Cabin", sans-serif;
+}
+
+.pricing2 {
+  background: rgb(32, 50, 119);
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  border: 1px solid rgb(0, 43, 128);
+}
+
+.ribbon {
+  position: absolute;
+  background: rgb(255, 211, 68);
+  color: black;
+  transform: rotate(-45deg);
+  text-align: center;
+  font-weight: bold;
+  top: 40px;
+  left: -33px; /* !!! */
+  width: 180px; /* !!! */
+}
+.pricing2 h6 {
+  font-weight: bold;
 }
 .pricing .price > span {
   color: rgb(175, 175, 175);
@@ -132,7 +156,7 @@ img:hover {
 
 .selectpicker option {
   border: none;
-  background-color: white;
+  background-color: rgba(104, 6, 6, 0.432);
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -146,7 +170,7 @@ img:hover {
 }
 .selectpicker {
   border: none;
-  background-color: white;
+  background-color: rgb(145, 0, 0);
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -157,4 +181,8 @@ img:hover {
   padding-left: 0;
   margin-top: -20px;
   background: none;
+}
+
+.head {
+  color: blue;
 }

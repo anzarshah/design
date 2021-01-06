@@ -73,11 +73,19 @@ ul {
   line-height: 38px;
   border-radius: 50%;
 }
+}
+.logoicon{
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
 .facebook-bg {
   background: #3b5998;
 }
 .twitter-bg {
-  background: #55acee;
+  background: #8a3ab9;
 }
 .google-bg {
   background: #dd4b39;

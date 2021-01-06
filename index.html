@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="./css/nav.css"/>
         <link rel="stylesheet" href="./css/footer.css"/>
         <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="./css/dropdown.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
         
@@ -19,7 +20,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-        
+<script type="text/javascript" src="./js/dropdown.js"></script>
+
         <header>
             <div class="top-bar">
                   <span></span>
@@ -38,8 +40,8 @@
                   </a>
                 </div>
                 <div class="top-bar__social">
-                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="https://www.facebook.com/BsnlFiberJK/"><i class="small facebook f icon" aria-hidden="true"></i></a>
+                  <a href="#"><i class="small instagram icon" aria-hidden="true"></i></a>
                 </div>
                 <nav class="top-bar__nav collapsed" id="top-bar__nav">
                   <ul class="top-bar__nav-list ">
@@ -178,7 +180,7 @@
 
         <!-- about start here -->
       <div>
-        <div id="background_contact"></div>
+          <div id="background_contact"></div>
 
 
         <div class="container">
@@ -194,14 +196,46 @@
             <div class="col-md-10 text-align-content-center">
               <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
                 <h2 style="text-align: center; font-family: Montserrat, sans-serif; font-size: 30px; margin-top: 10px;" >About Us</h2>
-                <p style="text-align: center;" >Bharat Fiber (FTTH) is a unique technology being deployed by BSNL for the first time in India. The fiber connectivity having unlimited bandwidth and state of the art technology provides fix access platform to deliver the high speed broadband from the 256 Kbps to 100 Mbps, IPTV having different type of contents like HDTV and future coming 3D TV and range of voice telephony services. It provides a comprehensive solution for the IP leased line, internet, Closed User Group (CUG), MPLS-VPN, VoIP, video conferencing, video calls etc whatever the services available on the internet platform, bandwidth on demand can be delivered by this connectivity to the without changing the access fiber and home device. Customer will get a CPE called Home Optical Network Termination (HONT) consist of 4X100 Mpbs Ethernet ports and 2 normal telephone ports. Each 100 Mbps ports will provide broadband, IPTVs, IP Video call and leased line etc as required by the customers. Customer will get power back unit having full load backup of four hours and normal backup of three days. This power backup will be AC input and connecting to the HONT on 12V DC.</p>
+                <p style="text-align: center;" >Bharat Fiber (FTTH) is a unique technology being deployed by BSNL for the first time 
+                  in India. The fiber connectivity having unlimited bandwidth and state of the art technology provides fix access 
+                  platform to deliver the high speed broadband from the 256 Kbps to 100 Mbps, IPTV having different type of contents 
+                  like HDTV and future coming 3D TV and range of voice telephony services. It provides a comprehensive solution for 
+                  the IP leased line, internet, Closed User Group (CUG), MPLS-VPN, VoIP, video conferencing, video calls etc whatever
+                   the services available on the internet platform, bandwidth on demand can be delivered by this connectivity to the 
+                   without changing the access fiber and home device. Customer will get a CPE called Home Optical Network Termination 
+                   (HONT) consist of 4X100 Mpbs Ethernet ports and 2 normal telephone ports. Each 100 Mbps ports will provide broadband, 
+                   IPTVs, IP Video call and leased line etc as required by the customers. Customer will get power back unit having full 
+                   load backup of four hours and normal backup of three days. This power backup will be AC input and connecting to
+                    the HONT on 12V DC.</p>
 
                   <br>
+                  <div class="containerdrop">
+                    <div class="main">
+                      <h2>Check your location<h2>
+                      <select name="">
+                        <option value="1"> Select your option </option>
+                        <option value="2">Karan Nagar</option>
+                        <option value="3">Batamaloo</option>
+                        <option value="4">Delhi</option>
+                        <option value="5">Pakistan</option>
+                        <option value="6">Paris</option>
+                        <option value="7">Afghanistan</option>
+                        <option value="8">Four</option>
+                    </select>
+                    </div>
+                  </div>
+
+                  
+
+                 <br>
 
                 
 
                   <h3 >Connectivity via Bharat Fiber (FTTH) :</h3>
-                  <p>BSNL will extend fiber from its nearest Central Office (CO) location directly or through franchisee and install HONT and battery backup at the customers identified locations. The services such as Voice, Broadband, IPTV etc. will be enabled as per the customer”s request plans for the same.
+                  <p>BSNL will extend fiber from its nearest Central Office (CO) location directly or through franchisee and install 
+                    HONT and battery backup at the customer  <a href="https://ideaxainfra.com/" target="_blank"><img height="20px" width="20px" src="./img/logoalone.png"></a> IDEAXA
+                    identified locations. The services such as Voice, Broadband, IPTV etc. 
+                    will be enabled as per the customer”s request plans for the same.
                   </p><br>
 
 
@@ -243,23 +277,23 @@
       <!-- about end here -->
       <footer class="footer-section">
         <div class="container">
-            <div class="footer-cta pt-5 pb-5">
+            <div class="footer-cta pt-3 pb-3">
                 <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt "></i>
                             <div class="cta-text">
                                 <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <span>Enco building, Karan Nagar, Srinagar</span>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Call us</h4>
-                                <span>9876543210 0</span>
+                                <span>+91-9469-807-324</span> <br> <span> +91-9419-088-606</span> <br> <span> +91-9419-088-707</span>
                             </div>
                         </div>
                     </div>
@@ -268,7 +302,7 @@
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
                                 <h4>Mail us</h4>
-                                <span>mail@info.com</span>
+                                <span> sales@bsnlfiberjk.com</span>
                             </div>
                         </div>
                     </div>
@@ -283,9 +317,9 @@
                           
                             <div class="footer-social-icon">
                                 <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                <a href="#"><i  class="big blue facebook icon"></i></a>
+                                <a href="#"><i class="big purple instagram icon"></i></a>
+                                <a href="#"><img class="logo" src="./img/logoalone.png" height="40px" width="40px"></a>
                             </div>
                         </div>
                     </div>
@@ -301,7 +335,7 @@
                       
                                 
                                 <li><a href="./index.html#about-section">About us</a></li>
-                                <li><a href="./pricing.html">pricing</a></li>
+                                <li><a href="./pricing.html">Pricing</a></li>
                             </ul>
                         </div>
                     </div>
@@ -315,37 +349,47 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-cta pt-2 pb-2">
+            <div>
+            <div class="footer-cta pt-1 pb-1">
               <div class="row">
                   <div class="col-xl-4 col-md-4 mb-30">
                       <div class="single-cta">
-                          <i class="fas fa-map-marker-alt"></i>
+                          <i style="color: aliceblue;" class="big gavel icon"></i>
                           <div class="cta-text">
-                              <h4>Find us</h4>
-                              <span>1010 Avenue, sw 54321, chandigarh</span>
+                              <h4>The website is developed by:</h4>
+                              <span> Anzar Shah </span>
                           </div>
                       </div>
                   </div>
                   <div class="col-xl-4 col-md-4 mb-30">
                       <div class="single-cta">
-                          <i class="fas fa-phone"></i>
+                          <i style="color: aliceblue;" class="big envelope icon"></i>
                           <div class="cta-text">
-                              <h4>Call us</h4>
-                              <span>9876543210 0</span>
+                              <h4>Contact me here:</h4>
+                              <a href="mailto:anzarshah43@gmail.com"><span>anzarshah43@gmail.com</span></a>
+
+                              
                           </div>
                       </div>
                   </div>
                   <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="far fa-envelope-open"></i>
-                          <div class="cta-text">
-                              <h4>Mail us</h4>
-                              <span>mail@info.com</span>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="single-cta">
+                      <i style="color: aliceblue;" class="big external alternate icon"></i>
+                      <div class="cta-text">
+                        <h4>Follow me here:</h4>
+                            <a href="ma"><span><i class="instagram icon"></i></span></a>
+                            <a href="ma"><span><i class="github  icon"></i></span></a>
+                            <a href="ma"><span><i class="linkedin icon"></i></span></a>
+
+
+
+                            
+                        </div>
+                    </div>
+                </div>
               </div>
           </div>
+            </div>
         </div>
     
     </footer>  
@@ -389,3 +433,4 @@
   
 
     </script>
+

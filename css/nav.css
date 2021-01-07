@@ -11,7 +11,7 @@ html {
 .top-bar {
   display: flex;
   min-height: 90px;
-  background: #000;
+  background: rgb(69, 141, 209);
   color: #ebebeb;
   align-items: center;
   flex-wrap: wrap;
@@ -90,7 +90,7 @@ html {
 }
 .top-bar__nav {
   width: 100%;
-  background: #000;
+  background: rgb(69, 141, 209);
   transition: 0.25s;
   max-height: 400px;
   overflow: hidden;

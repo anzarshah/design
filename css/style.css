@@ -2,6 +2,49 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 55%;
+  padding: 10px;
+}
+.column2 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+.aa { color: inherit; } 
+@media screen and (max-width: 3000px) and (min-width: 600px) {
+  .respo {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+
+.mod {
+  font-family: "Roboto Condensed", sans-serif;
+}
 @media only screen and (min-width: 1000px) {
   #background_contact {
     background-image: url("../img/bsnl.jpg");
@@ -16,6 +59,14 @@
     background-size: cover;
   }
 }
+
+@media only screen and (min-width: 1000px) {
+.butt{
+  margin-left: 190px;
+}
+  }
+}
+
 
 @media only screen and (max-width: 1000px) and (min-width: 750px) {
   #background_contact {
@@ -82,9 +133,10 @@
   transform: rotateY(180deg);
 }
 
+
 @media (max-width: 700px) {
   .logo {
-    margin-right: 25px;
+    margin-right: -60px;
   }
 }
 .logo {

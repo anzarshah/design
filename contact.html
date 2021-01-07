@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="./css/nav.css"/>
         <link rel="stylesheet" href="./css/footer.css"/>
         <link rel="stylesheet" href="./css/style.css"/>
-
+        <link rel="stylesheet" href="./css/dropdown.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
         
@@ -19,8 +19,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="icon" type="image/png" sizes="32x32" href=".//img/BSNL/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href=".//img/BSNL/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="512x512" href="./img/BSNL/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./img/BSNL/android-chrome-192x192.png">
 
-        
+<link rel="icon" type="image/ico"  href="./img/BSNL/favicon.ico">
+<script type="text/javascript" src="./js/dropdown.js"></script>
+
         <header>
             <div class="top-bar">
                   <span></span>
@@ -31,21 +37,23 @@
                 <a href="./index.html" class="top-bar__brand"> <img class="logo" src="./img/logoalone.png" height="80px" width="80px">
                  </a>  
                 <div class="top-bar__contact">
-                  <a href="tel:+918800759996">
-                    <i class="fa fa-phone" aria-hidden="true"></i> 880-075-9996
+                  <a href="#">
+                    <i class="fa fa-phone" aria-hidden="true"></i> +91-9469-807-324 / +91-9419-088-606 / +91-9419-088-707
+                    <!-- <span>+91-9469-807-324</span> <br> <span> +91-9419-088-606</span> <br> <span> +91-9419-088-707</span> -->
                   </a>
                   <a href="mailto:sales@bsnlfiberjk.com">
                     <i class="fa fa-envelope" aria-hidden="true"></i>  sales@bsnlfiberjk.com
                   </a>
                 </div>
                 <div class="top-bar__social">
-                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="https://www.facebook.com/BsnlFiberJK/"><i class="small facebook f icon" aria-hidden="true"></i></a>
+                  <a href="#" style="font-size: 20px;" class="boxx popup1_open">APPLY NOW</a>
+
                 </div>
                 <nav class="top-bar__nav collapsed" id="top-bar__nav">
                   <ul class="top-bar__nav-list ">
                     <li><a href="./index.html">Home</a></li>
-                    <li> <a class="popup1_open" class="join-button" href="#" >Apply Now</a></li>
+                    <li  > <a class="popup1_open boxx" href="#" >Apply Now</a></li>
                     <li><a href="./pricing.html">Pricing</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                   </ul>
@@ -55,14 +63,17 @@
                 <script src="./js/nav.js"></script>
 
 
+               
+
                 <section id="popup1"> 
                     <div class="site-section bg-light" id="contact-section">
                       <div class="container">
                         <div class="row">
                           <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
-                            <div class="block-heading-1">
-                                <h2>Apply here</h2>
-                                <span>Fill your details</span>
+                            <div class=" apply block-heading-1">
+                              <br>
+                              <h2 style="font-family: 'Ubuntu', sans-serif;color:  rgb(0, 43, 128);; ">Apply here</h2>
+                              <span style="font-weight: bold;">Fill your details</span>
                             </div>
                           </div>
                         </div>
@@ -136,7 +147,7 @@
                                 
                               <div class="row">
                                 <div class="col-md-6 mr-auto">
-                                  <input type="submit" class="btn btn-block btn-dark text-white py-3 px-5" value="Send Message">
+                                  <input type="submit"  style="color: rgb(32, 50, 119); font-size: 15px;" class="ui grey button" value="Send Message">
                                 </div>
                               </div>
                             </form>
@@ -178,32 +189,35 @@
 
 
 
+
+
         <!-- Contact start here -->
-        <br>
+        
         <br>
         <div>
 
             <div class="container">
-                <div class="segment">
+                <div  class="segment">
                
                     
     <div class="site-section bg-light" id="contact-section">
-        <div class="container">
+        <div  class="container">
           <div class="row">
             <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
               <div class="block-heading-1">
                  <!--h6>All plans come with free unlimited landline connection Over fiber and IPTV connection</h6>
                  <h6>High speed Internet + BSNL Landline connection + IPTV</h6-->
                     <br>
-                 <h5>* GST Applicable</h5>
-                <span><h2>Get In Touch</h2></span>
-                
+                    <div style="font-family: 'Bebas Neue', cursive;">
+                 <h5>** GST Applicable</h5>
+                <span><h1>Get In Touch</h1></span>
+                    </div>
             
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <div style="margin-left: 30px;" class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
               <form action="mailer.php" method="post">
                 <div class="form-group row">
                   <div class="col-md-6 mb-4 mb-lg-0">
@@ -268,28 +282,33 @@
   
   
              
-              
                   
                 <div class="row">
                   <div class="col-md-6 mr-auto">
-                    <input type="submit" class="btn btn-block btn-secondary text-white py-3 px-5" value="Send Message">
+                    <input type="submit" style="color: rgb(32, 50, 119); font-size: 15px; "  class="ui grey button butt" value="Send Message">
                   </div>
                 </div>
               </form>
             </div>
             <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="">
-              <div class="bg-white p-3 p-md-5">
-                <h3 class="text-black mb-4">Contact Info</h3>
+              <div class="site-logo"> <img src="./img/bsnlll.png" alt="FTTH" style="width:40%;" class="pic"> 
+                <img src="./img/logoalone3.png" style="width:40%;" class="pic" >  </div>
+                <br>
+                
+
+              <div class="bg-white p-3 p-md-3">
+                <h3 style="text-align: center;" class="mod1 text-black mb-4">CONTACT INFO:</h3>
                 <ul class="list-unstyled footer-link">
-                  <li class="d-block mb-3">
-                    <span class="d-block text-black">Address:</span>
-                    <span>  Srinagar Jammu and Kashmir</span></li>
-                  <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+91-9469-807-324 </span>
-                  <br><span>+91-9419-088-606 </span><br><span>+91-9419-088-707 </span></li>
-                  <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>sales@bsnlfiberjk.com</span></li>
+                  <li style="text-align: center;"  class="mod d-block mb-3">
+                    <span style="text-align: center;"  class=" mod d-block text-black"> <i class=" red map pin icon"></i> Address:</span>
+                    <span style="text-align: center;" >  Srinagar Jammu and Kashmir</span></li>
+                  <li style="text-align: center;"  class="mod d-block mb-3"><span class="d-block text-black"><i class="blue phone icon"></i> Phone:</span><span>+91-9469-807-324 </span>
+                  <br><span style="text-align: center;"  >+91-9419-088-606 </span><br><span>+91-9419-088-707 </span></li>
+                  <li style="text-align: center;"  class=" mod d-block mb-3"><span style="text-align: center;"  class="d-block text-black"> <i class=" yellow envelope icon"></i> Email:</span><span>sales@bsnlfiberjk.com</span></li>
                 </ul>
-                 <div class="site-logo"> <img src="images/ftthfooter.jpg" alt="FTTH" style="width:100%;" class="pic">
               </div> 
+              <br>
+
             </div>
           </div>
         </div>
@@ -309,115 +328,104 @@
           </div>
 
           <br>
-          <br>
-          <br>
+        
       <!-- about end here -->
       <footer class="footer-section">
         <div class="container">
-            <div class="footer-cta pt-5 pb-5">
+            <div class="footer-cta pt-3 pb-3">
                 <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i style="color: aliceblue;" class="fas fa-map-marker-alt "></i>
                             <div class="cta-text">
+                              <a target="_blank" href="https://www.google.com/maps/place/34%C2%B004'55.6%22N+74%C2%B048'02.7%22E/@34.0820101,74.8006288,20.43z/data=!4m6!3m5!1s0x0:0x0!7e2!8m2!3d34.0821182!4d74.8007579">
                                 <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <span>Enco building, Karan Nagar, Srinagar</span>
+                                </a>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-phone"></i>
+                            <i style="color: aliceblue;" class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Call us</h4>
-                                <span>9876543210 0</span>
+                                
+                                <a href="tel:+91-9469-807-324"><span>9469-807-324</span> </a>
+                                 <br> <a href="tel:+91-9419-088-606"> <span> 9419-088-606</span> </a>
+                                 <br> <a href="tel:+91-9419-088-707"> <span> 9419-088-707</span>  </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
+                            <i style="color: aliceblue;"class="far fa-envelope-open"></i>
+                            <div style="color: aliceblue;" class="cta-text">
+                              <a target="_blank"href="mailto:sales@bsnlfiberjk.com">
                                 <h4>Mail us</h4>
-                                <span>mail@info.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-content pt-1 pb-1">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                           
-                            
-                          
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul> <hr>
-                                <li><a class="popup1_open" href="#">Apply Now</a></li>
 
-                                <li><a href="./index.html">Home</a></li>
-                      
-                                
-                                <li><a href="./index.html#about-section">About us</a></li>
-                                <li><a href="./pricing.html">pricing</a></li>
-                            </ul>
+                                <span> sales@bsnlfiberjk.com</span></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                          
-                            <div class="footer-text mb-25">
-                              <div class="mapouter"><div class="gmap_canvas"><iframe width="352" height="193" id="gmap_canvas" src="https://maps.google.com/maps?q=karan%20nagar%20srinagar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com">uncut gems 123movies</a><style>.mapouter{position:relative;text-align:right;height:193px;width:352px;}.gmap_canvas {overflow:hidden;background:none!important;height:193px;width:352px;}</style><a href="https://maps-google.github.io/embed-google-map/">embed google map</a></div></div>                            </div>
-                           
-                        </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
-            <div class="footer-cta pt-2 pb-2">
+        
+            <div class="footer-cta pt-1 pb-1">
               <div class="row">
                   <div class="col-xl-4 col-md-4 mb-30">
+                    <br>
+
                       <div class="single-cta">
-                          <i class="fas fa-map-marker-alt"></i>
+                          <i class="big gavel icon"></i>
                           <div class="cta-text">
-                              <h4>Find us</h4>
-                              <span>1010 Avenue, sw 54321, chandigarh</span>
+                            <a href="https://compiled.social/anzarshah" target="_blank">
+                              <h4 style="color: black;" >The website is developed by:</h4>
+                              <span style="color: black;" > Anzar Shah </span>
+                            </a>
                           </div>
                       </div>
                   </div>
                   <div class="col-xl-4 col-md-4 mb-30">
+                    <br>
+
                       <div class="single-cta">
-                          <i class="fas fa-phone"></i>
+                          <i  class="big envelope icon"></i>
                           <div class="cta-text">
-                              <h4>Call us</h4>
-                              <span>9876543210 0</span>
+                            <a href="mailto:anzarshah43@gmail.com">
+                              <h4 style="color: black;">Contact me here:</h4>
+                              <span style="color: black;" >anzarshah43@gmail.com</span></a>
+
+                              
                           </div>
                       </div>
                   </div>
                   <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="far fa-envelope-open"></i>
-                          <div class="cta-text">
-                              <h4>Mail us</h4>
-                              <span>mail@info.com</span>
-                          </div>
-                      </div>
-                  </div>
+                    <br>
+
+                    <div class="single-cta">
+                      <i  class="big external alternate icon"></i>
+                      <div class="cta-text">
+                        <h4 style="color: black;" >Follow me here:</h4>
+                            <a href="https://www.instagram.com/iamzeo001/" target="_blank"><span><i class=" instagram icon"></i></span></a>
+                            <a href="https://github.com/anzarshah" target="_blank"><span><i class=" github  icon"></i></span></a>
+                            <a href="https://www.linkedin.com/in/shah-anzar-948851193/" target="_blank"><span><i class=" linkedin icon"></i></span></a>
+
+
+
+                            
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+            
               </div>
           </div>
+            </div>
         </div>
+
+   
     
     </footer>  
 

@@ -19,7 +19,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="icon" type="image/png" sizes="32x32" href=".//img/BSNL/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href=".//img/BSNL/favicon-16x16.png">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="512x512" href="./img/BSNL/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./img/BSNL/android-chrome-192x192.png">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+<link rel="icon" type="image/ico"  href="./img/BSNL/favicon.ico">
 <script type="text/javascript" src="./js/dropdown.js"></script>
 
         <header>
@@ -32,8 +39,9 @@
                 <a href="./index.html" class="top-bar__brand"> <img class="logo" src="./img/logoalone.png" height="80px" width="80px">
                  </a>  
                 <div class="top-bar__contact">
-                  <a href="tel:+918800759996">
-                    <i class="fa fa-phone" aria-hidden="true"></i> 880-075-9996
+                  <a href="#">
+                    <i class="fa fa-phone" aria-hidden="true"></i> +91-9469-807-324 / +91-9419-088-606 / +91-9419-088-707
+                    <!-- <span>+91-9469-807-324</span> <br> <span> +91-9419-088-606</span> <br> <span> +91-9419-088-707</span> -->
                   </a>
                   <a href="mailto:sales@bsnlfiberjk.com">
                     <i class="fa fa-envelope" aria-hidden="true"></i>  sales@bsnlfiberjk.com
@@ -41,12 +49,13 @@
                 </div>
                 <div class="top-bar__social">
                   <a href="https://www.facebook.com/BsnlFiberJK/"><i class="small facebook f icon" aria-hidden="true"></i></a>
-                  <a href="#"><i class="small instagram icon" aria-hidden="true"></i></a>
+                  <a href="#" style="font-size: 20px;" class="boxx popup1_open">APPLY NOW</a>
+
                 </div>
                 <nav class="top-bar__nav collapsed" id="top-bar__nav">
                   <ul class="top-bar__nav-list ">
                     <li><a href="./index.html">Home</a></li>
-                    <li> <a class="popup1_open" class="join-button" href="#" >Apply Now</a></li>
+                    <li  > <a class="popup1_open boxx" href="#" >Apply Now</a></li>
                     <li><a href="./pricing.html">Pricing</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                   </ul>
@@ -56,97 +65,99 @@
                 <script src="./js/nav.js"></script>
 
 
+               
                 <section id="popup1"> 
-                    <div class="site-section bg-light" id="contact-section">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
-                            <div class="block-heading-1">
-                              <h2>Apply here</h2>
-                              <span>Fill your details</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-12 mb-5" data-aos="fade-up" data-aos-delay="">
-                            <form action="mailer.php" method="post">
-                              <div class="form-group row">
-                                <div class="col-md-6 mb-4 mb-lg-0">
-                                  <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                  <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
-                                </div>
-                                </div>
-                
-                            <div class="form-group row">
-                                <div class="col-md-6 mb-4 mb-lg-0">
-                                  <input type="text" class="form-control" name="email" placeholder="Email ID" required>
-                                </div>
-                                <div class="col-md-6">
-                                  <input type="text" class="form-control" name="phone" placeholder="Phone No" required>
-                                </div>
-                                </div>
-                
-                                 <div class="form-group row">
-                                <div class="col-md-6 mb-4 mb-lg-0">                
-                                   <select class="form-control" id="drop" name="district">
-                                    <option value="Srinagar" name="Srinagar">Srinagar</option>
-                                    <option value="Baramulla"  name="Baramulla">Baramulla</option>
-                                    <option value="Anantnag"  name="Anantnag">Anantnag</option>
-                                    <option value="Budgam"  name="Budgam">Budgam</option>
-                                    <option value="Ganderbal"  name="Ganderbal">Ganderbal</option>
-                                    <option value="Pulwama"  name="Pulwama">Pulwama</option>
-                                    <option value="Others" name="Others">Others</option>
-                                  </select>
-                                </div>
-                                <div class="col-md-6">
-                                  <input type="text" class="form-control" name="address" placeholder="Address" required>
-                                </div>
-                                </div>
-                          
-                
-                           <div class="form-group row">
-                                <div class="col-md-6 mb-4 mb-lg-0">
-                                  <h5>Purpose of use</h5>
-                                </div>
-                                <div class="col-md-6">
-                                  <input type="radio" id="home" name="use" value="Home" required>
-                                  <label for="Home"> Home </label>
-                                  <input type="radio" id="commercial" name="use" value="Commercial" required  style="margin-left:10px;">
-                                  <label for="Commercial">Commercial</label><br>
-                                </div>
-                            </div>
-                
-                
-                            <!-- <div class="form-group row">
-                                <div class="col-md-6 mb-4 mb-lg-0">
-                                  <h5>Connection Type</h5>
-                                </div>
-                                <div class="col-md-6">
-                                  <input type="radio" id="wired" name="connection" value="wired" required>
-                                  <label for="wired"> Wired</label>
-                                  <input type="radio" id="wireless" name="connection" value="wireless"  required style="margin-left:10px;">
-                                  <label for="wireless">Wireless</label><br>
-                                </div>
-                            </div> -->
-                
-                
-                           
-                            
-                                
-                              <div class="row">
-                                <div class="col-md-6 mr-auto">
-                                  <input type="submit" class="btn btn-block btn-dark text-white py-3 px-5" value="Send Message">
-                                </div>
-                              </div>
-                            </form>
+                  <div style="color: black;" class="site-section bg-light" id="contact-section">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
+                          <div class=" apply block-heading-1">
+                            <br>
+                            <h2 style="font-family: 'Ubuntu', sans-serif;color:  rgb(0, 43, 128);; ">Apply here</h2>
+                            <span style="font-weight: bold;">Fill your details</span>
                           </div>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-lg-12 mb-5" data-aos="fade-up" data-aos-delay="">
+                          <form action="mailer.php" method="post">
+                            <div class="form-group row">
+                              <div class="col-md-6 mb-4 mb-lg-0">
+                                <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                              </div>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                              </div>
+                              </div>
+              
+                          <div class="form-group row">
+                              <div class="col-md-6 mb-4 mb-lg-0">
+                                <input type="text" class="form-control" name="email" placeholder="Email ID" required>
+                              </div>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" name="phone" placeholder="Phone No" required>
+                              </div>
+                              </div>
+              
+                               <div class="form-group row">
+                              <div class="col-md-6 mb-4 mb-lg-0">                
+                                 <select class="form-control" id="drop" name="district">
+                                  <option value="Srinagar" name="Srinagar">Srinagar</option>
+                                  <option value="Baramulla"  name="Baramulla">Baramulla</option>
+                                  <option value="Anantnag"  name="Anantnag">Anantnag</option>
+                                  <option value="Budgam"  name="Budgam">Budgam</option>
+                                  <option value="Ganderbal"  name="Ganderbal">Ganderbal</option>
+                                  <option value="Pulwama"  name="Pulwama">Pulwama</option>
+                                  <option value="Others" name="Others">Others</option>
+                                </select>
+                              </div>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" name="address" placeholder="Address" required>
+                              </div>
+                              </div>
+                        
+              
+                         <div class="form-group row">
+                              <div class="col-md-6 mb-4 mb-lg-0">
+                                <h5>Purpose of use</h5>
+                              </div>
+                              <div class="col-md-6">
+                                <input type="radio" id="home" name="use" value="Home" required>
+                                <label for="Home"> Home </label>
+                                <input type="radio" id="commercial" name="use" value="Commercial" required  style="margin-left:10px;">
+                                <label for="Commercial">Commercial</label><br>
+                              </div>
+                          </div>
+              
+              
+                          <!-- <div class="form-group row">
+                              <div class="col-md-6 mb-4 mb-lg-0">
+                                <h5>Connection Type</h5>
+                              </div>
+                              <div class="col-md-6">
+                                <input type="radio" id="wired" name="connection" value="wired" required>
+                                <label for="wired"> Wired</label>
+                                <input type="radio" id="wireless" name="connection" value="wireless"  required style="margin-left:10px;">
+                                <label for="wireless">Wireless</label><br>
+                              </div>
+                          </div> -->
+              
+              
+                         
+                          
+                              
+                            <div class="row">
+                              <div class="col-md-6 mr-auto">
+                                <input type="submit"  style="color: rgb(32, 50, 119); font-size: 15px;" class="ui grey button" value="Send Message">
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
-                
-                </section>
+                  </div>
+              
+              </section>
                 
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
@@ -173,7 +184,7 @@
         </header>
 
     </head>
-    <body style="background-color: rgb(175, 175, 175);">
+    <body style="background-color: rgb(167, 167, 167); color: rgb(255, 255, 255);">
 
 
 
@@ -195,8 +206,9 @@
           <div class="row mb-5 justify-content-center">
             <div class="col-md-10 text-align-content-center">
               <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
-                <h2 style="text-align: center; font-family: Montserrat, sans-serif; font-size: 30px; margin-top: 10px;" >About Us</h2>
-                <p style="text-align: center;" >Bharat Fiber (FTTH) is a unique technology being deployed by BSNL for the first time 
+                <div style="text-align: center; font-family: 'Bebas Neue', cursive;font-size: 60px;color: rgb(69, 141, 209); " >About Us</div>
+                <hr style= "color: rgb(69, 141, 209); ">
+                <p style="text-align: center; font-size: 18px;font-family: 'Work Sans', sans-serif;" >Bharat Fiber (FTTH) is a unique technology being deployed by BSNL for the first time 
                   in India. The fiber connectivity having unlimited bandwidth and state of the art technology provides fix access 
                   platform to deliver the high speed broadband from the 256 Kbps to 100 Mbps, IPTV having different type of contents 
                   like HDTV and future coming 3D TV and range of voice telephony services. It provides a comprehensive solution for 
@@ -209,62 +221,90 @@
                     the HONT on 12V DC.</p>
 
                   <br>
-                  <div>
-                    <div class="dropdown">
-                      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                      <div id="myDropdown" class="dropdown-content">
-                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                        <a href="#about">About</a>
-                        <a href="#base">Base</a>
-                        <a href="#blog">Blog</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#custom">Custom</a>
-                        <a href="#support">Support</a>
-                        <a href="#tools">Tools</a>
-                      </div>
+               
+                  
+                <div class="ui divider"></div>
+
+                 <br>
+                 <div class="row">
+                  <div class="column1">
+                    <div style=" font-size: 18px;font-family: 'Work Sans', sans-serif;"  class="column">
+                      <p> IDEAXA PVT Limited <a target="_blank" href="https://ideaxainfra.com/">  <i class="small  external alternate icon"></i>  </a> collaborated with Bharat Fiber (FTTH) to form BSNL JK FIBER which provides super fast and cost-efficient Internet to the valley.  Our experienced team together with the support of BSNL works all day to provide you with a 24/7 Internet service.
+                        <br>
+                        BSNL JK FIBER also provides a free landline service for each fiber package.
+                     
+                         </p>
+  
+                      
+                         
                     </div>
                   </div>
 
                   
 
-                 <br>
 
-                 <div class="ui grid">
-                  <div class="four wide column">
-                    <img height="200px" width="200px" src="./img/logoalone.png">
-                  </div>
-                  <div class="nine wide column">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum hendrerit enim, non bibendum nibh cursus ac. Praesent turpis lacus, aliquam vitae ante vel, venenatis facilisis justo. Vivamus tristique interdum dignissim. Suspendisse a lobortis augue, vel ultricies nunc. Suspendisse potenti. Aliquam nibh metus, maximus eu tortor ut, dictum ultricies mauris. Donec eu viverra nulla. Suspendisse risus lectus, fringilla ac nisi quis, lacinia ultrices urna. Ut fringilla nulla non odio maximus, et hendrerit turpis elementum. Suspendisse pellentesque, ligula sit amet mollis posuere, leo enim pharetra enim, at blandit lorem dolor et dui. Maecenas non quam placerat, fringilla tortor a, laoreet sapien.</p>
-                  </div>
-                  <div class="three wide column">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum hendrerit enim, non bibendum nibh cursus ac. Praesent turpis lacus, aliquam vitae ante vel, venenatis facilisis justo. Vivamus tristique interdum dignissim. Suspendisse a lobortis augue, vel ultricies nunc. Suspendisse potenti. Aliquam nibh metu</p>
+
+                  <div class="column2" >
+                    <div class="respo ui divider"></div>
+
+                    <p style="text-align: center; font-size: 18px;font-family: 'Work Sans', sans-serif; color: "  >
+
+
+
+                      Right now we are providing internet service at these locaions:
+                    </p>
+                    <ul style=" font-size: 18px;font-family: 'Work Sans', sans-serif;"   class="list-unstyled ul-check success mb-5">                  
+                      <li ><i class=" red map pin icon"></i>KARAN NAGAR</li>
+                      <li ><i class=" red map pin icon"></i>BATAMALOO</li>
+                      <li ><i class=" red map pin icon"></i>NOWAHATA</li>
+                      <li ><i class=" red map pin icon"></i>BATAMALOO</li>                  
+                      <li ><i class=" red map pin icon"></i>BATAMALOO</li>
+                      <li ><i class=" red map pin icon"></i>BATAMALOO</li>
+                                        
+                    </ul>
+                    
                   </div>
                 </div>
+                
+
+               
+              
+                <div class="ui divider"></div>
+
+                <div style="text-align: center; color: #FFD700; font-size: 25px;font-family: 'Work Sans', sans-serif;" >
+
+                <h5>NEW YEAR OFFER : <span style="color: white;">(WE HAVE LIMITED PERIOD PACKS  RIGHT NOW GO CHECK IT)</span>  <a class="aa" href="./pricing.html">  <i class="yellow external alternate icon"></i>  </a>
+                </h5>
+                </div>
+
+
+
+                <div class="ui divider"></div>
 
                 
 
-                  <h3 >Connectivity via Bharat Fiber (FTTH) :</h3>
-                  <p>BSNL will extend fiber from its nearest Central Office (CO) location directly or through franchisee and install 
-                    HONT and battery backup at the customer  <a href="https://ideaxainfra.com/" target="_blank"><img height="20px" width="20px" src="./img/logoalone.png"></a> IDEAXA
-                    identified locations. The services such as Voice, Broadband, IPTV etc. 
+                  <h3 style=" font-family: 'Work Sans', sans-serif;" >Connectivity via Bharat Fiber (FTTH) :</h3>
+                  <p style=" font-size: 18px;font-family: 'Work Sans', sans-serif;" > BSNL will extend fiber from its nearest Central Office (CO) location directly or through franchisee and install 
+                    HONT and battery backup at the customer identified locations. The services such as Voice, Broadband, IPTV etc. 
                     will be enabled as per the customer”s request plans for the same.
                   </p><br>
 
+                  <div class="ui divider"></div>
 
-            <h3 >The services over Bharat Fiber (FTTH):</h3>
-            <p>Basic internet Access Service controlled and uncontrolled from 256Kbps to 1000Mbps.</p>
-                  <ul class="list-unstyled ul-check success mb-5">                  
-                  <li ><i class="bullseye icon"></i>Remote Education</li>
-                  <li ><i class="bullseye icon"></i>VPN on broadband</li>
-                  <li ><i class="bullseye icon"></i>Interactive Gaming</li>
-                  <li ><i class="bullseye icon"></i>Dial up VPN Service</li>                  
-                  <li ><i class="bullseye icon"></i>Audio on Demand Service</li>
-                  <li ><i class="bullseye icon"></i>TV over IP Service (MPEG2).</li>
-                  <li ><i class="bullseye icon"></i>Virtual Private LAN Service (VPLS)</li>
-                  <li ><i class="bullseye icon"></i>Video on Demand (VoD)(MPEG4) play like VCR</li>
-                  <li ><i class="bullseye icon"></i>Bandwidth on Demand (User and or service configurable)</li>
-                  <li ><i class="bullseye icon"></i>Point to Point and Point to Multi Point Video Conferencing, virtual classroom</li>
-                  <li ><i class="bullseye icon"></i>Voice and Video Telephony over IP: Connection under control of centrally located soft switches</li>
+            <h3 style=" font-family: 'Work Sans', sans-serif;" >The services over Bharat Fiber (FTTH):</h3>
+            <p style=" font-size: 18px;font-family: 'Work Sans', sans-serif;" >Basic internet Access Service controlled and uncontrolled from 256Kbps to 1000Mbps.</p>
+                  <ul style=" font-size: 18px;font-family: 'Work Sans', sans-serif;" class="list-unstyled ul-check success mb-5">                  
+                  <li ><i class="chevron right icon"></i>Remote Education</li>
+                  <li ><i class="chevron right icon"></i>VPN on broadband</li>
+                  <li ><i class="chevron right icon"></i>Interactive Gaming</li>
+                  <li ><i class="chevron right icon"></i>Dial up VPN Service</li>                  
+                  <li ><i class="chevron right icon"></i>Audio on Demand Service</li>
+                  <li ><i class="chevron right icon"></i>TV over IP Service (MPEG2).</li>
+                  <li ><i class="chevron right icon"></i>Virtual Private LAN Service (VPLS)</li>
+                  <li ><i class="chevron right icon"></i>Video on Demand (VoD)(MPEG4) play like VCR</li>
+                  <li ><i class="chevron right icon"></i>Bandwidth on Demand (User and or service configurable)</li>
+                  <li ><i class="chevron right icon"></i>Point to Point and Point to Multi Point Video Conferencing, virtual classroom</li>
+                  <li ><i class="chevron right icon"></i>Voice and Video Telephony over IP: Connection under control of centrally located soft switches</li>
                                     
                 </ul>
 
@@ -293,116 +333,96 @@
                 <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-map-marker-alt "></i>
+                            <i style="color: aliceblue;" class="fas fa-map-marker-alt "></i>
                             <div class="cta-text">
+                              <a target="_blank" href="https://www.google.com/maps/place/34%C2%B004'55.6%22N+74%C2%B048'02.7%22E/@34.0820101,74.8006288,20.43z/data=!4m6!3m5!1s0x0:0x0!7e2!8m2!3d34.0821182!4d74.8007579">
                                 <h4>Find us</h4>
                                 <span>Enco building, Karan Nagar, Srinagar</span>
+                                </a>
                             </div>
                         </div> 
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-phone"></i>
+                            <i style="color: aliceblue;" class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Call us</h4>
-                                <span>+91-9469-807-324</span> <br> <span> +91-9419-088-606</span> <br> <span> +91-9419-088-707</span>
+                                
+                                <a href="tel:+91-9469-807-324"><span>9469-807-324</span> </a>
+                                 <br> <a href="tel:+91-9419-088-606"> <span> 9419-088-606</span> </a>
+                                 <br> <a href="tel:+91-9419-088-707"> <span> 9419-088-707</span>  </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
+                            <i style="color: aliceblue;"class="far fa-envelope-open"></i>
+                            <div style="color: aliceblue;" class="cta-text">
+                              <a target="_blank"href="mailto:sales@bsnlfiberjk.com">
                                 <h4>Mail us</h4>
-                                <span> sales@bsnlfiberjk.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-content pt-1 pb-1">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                           
-                            
-                          
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i  class="big blue facebook icon"></i></a>
-                                <a href="#"><i class="big purple instagram icon"></i></a>
-                                <a href="#"><img class="logo" src="./img/logoalone.png" height="40px" width="40px"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul> <hr>
-                                <li><a class="popup1_open" href="#">Apply Now</a></li>
 
-                                <li><a href="./index.html">Home</a></li>
-                      
-                                
-                                <li><a href="./index.html#about-section">About us</a></li>
-                                <li><a href="./pricing.html">Pricing</a></li>
-                            </ul>
+                                <span> sales@bsnlfiberjk.com</span></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                          
-                            <div class="footer-text mb-25">
-                              <div class="mapouter"><div class="gmap_canvas"><iframe width="352" height="193" id="gmap_canvas" src="https://maps.google.com/maps?q=karan%20nagar%20srinagar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com">uncut gems 123movies</a><style>.mapouter{position:relative;text-align:right;height:193px;width:352px;}.gmap_canvas {overflow:hidden;background:none!important;height:193px;width:352px;}</style><a href="https://maps-google.github.io/embed-google-map/">embed google map</a></div></div>                            </div>
-                           
-                        </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
-            <div>
+        
             <div class="footer-cta pt-1 pb-1">
               <div class="row">
                   <div class="col-xl-4 col-md-4 mb-30">
+                    <br>
+
                       <div class="single-cta">
-                          <i style="color: aliceblue;" class="big gavel icon"></i>
+                          <i class="big gavel icon"></i>
                           <div class="cta-text">
-                              <h4>The website is developed by:</h4>
-                              <span> Anzar Shah </span>
+                            <a href="https://compiled.social/anzarshah" target="_blank">
+                              <h4 style="color: black;" >The website is developed by:</h4>
+                              <span style="color: black;" > Anzar Shah </span>
+                            </a>
                           </div>
                       </div>
                   </div>
                   <div class="col-xl-4 col-md-4 mb-30">
+                    <br>
+
                       <div class="single-cta">
-                          <i style="color: aliceblue;" class="big envelope icon"></i>
+                          <i  class="big envelope icon"></i>
                           <div class="cta-text">
-                              <h4>Contact me here:</h4>
-                              <a href="mailto:anzarshah43@gmail.com"><span>anzarshah43@gmail.com</span></a>
+                            <a href="mailto:anzarshah43@gmail.com">
+                              <h4 style="color: black;">Contact me here:</h4>
+                              <span style="color: black;" >anzarshah43@gmail.com</span></a>
 
                               
                           </div>
                       </div>
                   </div>
                   <div class="col-xl-4 col-md-4 mb-30">
+                    <br>
+
                     <div class="single-cta">
-                      <i style="color: aliceblue;" class="big external alternate icon"></i>
+                      <i  class="big external alternate icon"></i>
                       <div class="cta-text">
-                        <h4>Follow me here:</h4>
-                            <a href="ma"><span><i class="instagram icon"></i></span></a>
-                            <a href="ma"><span><i class="github  icon"></i></span></a>
-                            <a href="ma"><span><i class="linkedin icon"></i></span></a>
+                        <h4 style="color: black;" >Follow me here:</h4>
+                            <a href="https://www.instagram.com/iamzeo001/" target="_blank"><span><i class=" instagram icon"></i></span></a>
+                            <a href="https://github.com/anzarshah" target="_blank"><span><i class=" github  icon"></i></span></a>
+                            <a href="https://www.linkedin.com/in/shah-anzar-948851193/" target="_blank"><span><i class=" linkedin icon"></i></span></a>
 
 
 
                             
                         </div>
                     </div>
+                    <br>
                 </div>
+
+            
               </div>
           </div>
             </div>
         </div>
+
+   
     
     </footer>  
 
@@ -446,3 +466,4 @@
 
     </script>
 
+</html>

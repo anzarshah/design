@@ -70,17 +70,20 @@
 
 @media only screen and (max-width: 1000px) and (min-width: 750px) {
   #background_contact {
-    background-image: url("../img/bsnl2.jpg");
+    background-image: url("../img/bsnl5.jpg");
     width: 100vw;
     height: 300px;
-    /* background-position: 0 0; */
     background-size: 100%;
     display: block;
-    /* margin-top: 10px; */
+  
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+      /* margin-top: 10px; */
+          /* background-position: 0 0; */
+
   }
 }
 
@@ -148,6 +151,12 @@ img:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
 
 /* The fast way */
 .make-it-fast {

@@ -11,8 +11,8 @@
     $message_use = "Purpose of use  :".$use.".";
     $district=strip_tags(trim($_POST['district']));
     $message_district ="Area/District   :".$district ;
-    $connectionType=$_POST['connection'];
-    $message_connectionType = "Connection Type :".$connectionType.".";
+    // $connectionType=$_POST['connection'];
+    // $message_connectionType = "Connection Type :".$connectionType.".";
 
     // Check the data.
     if (empty($firstname) OR empty($lastname) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {

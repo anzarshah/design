@@ -2,8 +2,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-
-
 /* Create two equal columns that floats next to each other */
 .column1 {
   float: left;
@@ -50,7 +48,9 @@
     width: 100%;
   }
 }
-.aa { color: inherit; } 
+.aa {
+  color: inherit;
+}
 @media screen and (max-width: 3000px) and (min-width: 600px) {
   .respo {
     display: none;
@@ -61,7 +61,6 @@
     width: 100%;
   }
 }
-
 
 .mod {
   font-family: "Roboto Condensed", sans-serif;
@@ -82,12 +81,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
-.butt{
-  margin-left: 190px;
-}
+  .butt {
+    margin-left: 190px;
   }
 }
-
 
 @media only screen and (max-width: 1000px) and (min-width: 750px) {
   #background_contact {
@@ -96,15 +93,13 @@
     height: 300px;
     background-size: 100%;
     display: block;
-  
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-      /* margin-top: 10px; */
-          /* background-position: 0 0; */
-
+    /* margin-top: 10px; */
+    /* background-position: 0 0; */
   }
 }
 
@@ -157,7 +152,6 @@
   transform: rotateY(180deg);
 }
 
-
 @media (max-width: 700px) {
   .logo {
     margin-right: -60px;
@@ -177,8 +171,6 @@ img:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-
-
 
 /* The fast way */
 .make-it-fast {
